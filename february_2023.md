@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Another page
+title: February 2023
 description: This is just another page
 ---
 
@@ -75,7 +75,7 @@ __Explanation:__
 __Code:__
 
 AVA test - [[1]](https://github.com/vetheve/-Codecademy-Portfolio-Project-Personal-Budget-2/blob/main/test/balance/budget_balance_test.js)
-```
+```js
 // Test to check if the Get request to '/budgetbalance/:category' route returns the total budget balance by category
 test('5.4 Get /budgetbalance/:category should returns the total budget balance by category', async t => {
 
@@ -100,7 +100,7 @@ test('5.4 Get /budgetbalance/:category should returns the total budget balance b
 ```
 
 Request to test - [[2]](https://github.com/vetheve/-Codecademy-Portfolio-Project-Personal-Budget-2/blob/main/server/budget_balance.js)
-```
+```js
 budgetBalanceRouter
   .route('/:category')
   // Get the total budget balance for a specific category
@@ -135,7 +135,7 @@ budgetBalanceRouter
 ```
 
 Terminal output :
-```
+```shell
 ✘ [fail]: budget_balance_test › 5.4 Get /budgetbalance/:category should returns the total budget balance by category
     ℹ {
         budget_balance: null,
@@ -215,7 +215,7 @@ __Explanation:__
 __Code:__
 
 AVA test - [[3]](https://github.com/vetheve/-Codecademy-Portfolio-Project-Personal-Budget-2/blob/main/test/budgets/budgets_test.js)
-````
+````js
 // Test to check if the PUT request to '/budgets/id/:id' route updates a budget in the list budgets
 test('1.4 PUT /budgets/budget_id/:budget_id should update a budget in the list', async t => {
 
@@ -240,7 +240,7 @@ test('1.4 PUT /budgets/budget_id/:budget_id should update a budget in the list',
 
 ````
 Request to test - [[4]](https://github.com/vetheve/-Codecademy-Portfolio-Project-Personal-Budget-2/blob/main/server/budgets.js)
-````
+````js
 // Endpoint to handle requests to a specific budget resource by ID
 budgetsRouter
     .route('/budget_id/:budget_id')
@@ -291,7 +291,7 @@ budgetsRouter
 
 Terminal output :
 
-````
+````shell
 /workspace/-Codecademy-Portfolio-Project-Personal-Budget-2/node_modules/pg-protocol/src/parser.ts:369
       name === 'notice' ? new NoticeMessage(length, messageValue) : new DatabaseError(messageValue, length, name)
                                                                     ^
@@ -589,7 +589,7 @@ __Explanation:__
 >One challenge I faced was securing the code from Cross-Site Scripting (XSS) attacks. To do this, I used a tool called express-validator. The code uses a function called validator.escape which is supposed to protect against any malicious code being inserted into an input form. However, I am getting an error in the console when I try to use it.
 
 Terminal output :
-````
+````shell
 TypeError: validator.escape is not a function
     at /workspace/Codecademy-Acme_Bank_Codecademy-Project/app.js:172:29
     at Layer.handle [as handle_request] (/workspace/Codecademy-Acme_Bank_Codecademy-Project/node_modules/express/lib/router/layer.js:95:5)
@@ -603,7 +603,7 @@ TypeError: validator.escape is not a function
     at Layer.handle [as handle_request] (/workspace/Codecademy-Acme_Bank_Codecademy-Project/node_modules/express/lib/router/layer.js:95:5)
 ````
 Here is the code :
-````
+````js
 const validator = require("express-validator");
 
 app.post("/public_forum", function (request, response) {
@@ -639,7 +639,7 @@ app.post("/public_forum", function (request, response) {
 ````
 
 My solution :
-````
+````js
 // This code defines a post request handler for the "/public_forum" endpoint.
 app.post('/public_forum', async function (request, response) {
   // Check if the user is logged in by checking the session data.
@@ -735,7 +735,7 @@ __Explanation:__
 >The date must exist in `budgets` table before using it in `expenses` table.
 
 Terminal output :
-````
+````shell
 /workspace/-Codecademy-Portfolio-Project-Personal-Budget-2/node_modules/pg-protocol/src/parser.ts:369
       name === 'notice' ? new NoticeMessage(length, messageValue) : new DatabaseError(messageValue, length, name)
                                                                     ^
@@ -910,12 +910,12 @@ __Explanation:__
 >As a result of this error, the test case for adding new revenue to the database has failed, returning a status code of 500 instead of the expected 201.
 >
 >Here's the query I have to use to change the data type of the description column in the revenues table from VARCHAR(20) to VARCHAR(50):
-````
+````sql
 ALTER TABLE revenues ALTER COLUMN description TYPE VARCHAR(50);
 ````
 
 Terminal output :
-````
+````shell
 /workspace/-Codecademy-Portfolio-Project-Personal-Budget-2/node_modules/pg-protocol/src/parser.ts:369
       name === 'notice' ? new NoticeMessage(length, messageValue) : new DatabaseError(messageValue, length, name)
                                                                     ^
@@ -992,12 +992,12 @@ Since the `apiRouter` has mounted revenuesRouter under the `/revenues` path, any
 >I try to retrieve revenue data for a specific ULID identifier, but I get the full list of revenues records.
 
 Request
-````
+````shell
 http://localhost:4001/revenues?ulid_id=01EXBDPV5NM0W5RSMG31WMQM6B
 ````
 
 Internet page :
-````
+````html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -1011,7 +1011,7 @@ Internet page :
 ````
 
 Expected output :
-````
+````json
     {
       "ulid_id": "01EXBDPV5NM0W5RSMG31WMQM6B",
       "dt_create": "2021-01-31T05:12:36.789Z",
@@ -1023,7 +1023,7 @@ Expected output :
 ````
 
 Terminal output
-````
+````shell
 Status: 404 Not Found
 ````
 
@@ -1193,7 +1193,7 @@ __Explanation:__
 >To fix this issue, the migration needs to be undone with the command `npx sequelize-cli db:migrate:undo --name 20230223064615-create-user.js`, and the migration file '20230223064615-create-user.js' needs to be modified to name the table as 'users' instead of 'Users'. Then, the migration needs to be re-run with the command npx sequelize-cli db:migrate to create the 'users' table in the database.
 
 Terminal output :
-````
+````shell
 postgres=# \c database_development
 You are now connected to database "database_development" as user "postgres".
 database_development=# \dt
@@ -1242,7 +1242,7 @@ __Explanation:__
 >When I try to insert a new record in the Captions table, the promise returns <pending> and nothing is inserted in the table. However, when I log the returned object, I can see that the Caption object has been created with all the required attributes.
 
 Here is the code I am using to insert the record:
-````
+````js
 const newCaption = await Caption.create({
   ulid_id: 'qdslf,lkqsdnlksvd',
   text: 'djfbsdkjfbqlksjdcnbkqjsdnc'
@@ -1252,7 +1252,7 @@ console.log(newCaption);
 
 ````
 Terminal output :     
-````
+````shell
 Promise { <pending> }
 Executing (default): INSERT INTO "Captions" ("ulid_id","text","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "ulid_id","text","createdAt","updatedAt";
 Caption {
@@ -1400,7 +1400,7 @@ __Explanation:__
 >To fix the test, I need to identify the cause of the error during the registration process and fix it. Once the error is fixed, the registerNewUser function should be able to create a new user in the database and return a JWT token with an HTTP status code of 201.
     
 Terminal output :
-````
+````shell
 gitpod /workspace/Codecademy_project-Photo_Caption_Contest (main) $ npm test tests/register/registercontroller.js
 
 > test
@@ -1460,7 +1460,7 @@ gitpod /workspace/Codecademy_project-Photo_Caption_Contest (main) $ npm test tes
 ````
 
 /workspace/Codecademy_project-Photo_Caption_Contest/controllers/authcontroller.js
-````
+````js
 // Importing the User model from the index file in the models directory
 const { 
     User 
@@ -1511,7 +1511,7 @@ exports.registerNewUser = async (req, res) => {
 ````
 
 /workspace/Codecademy_project-Photo_Caption_Contest/tests/register/registercontroller.js
-````
+````js
 // Import necessary libraries and dependencies
 const test = require('ava'); // Test runner library
 const sinon = require('sinon'); // Test spies, stubs, and mocks library
@@ -1600,178 +1600,6 @@ test('2. registerNewUser returns an error message if an error occurs during the 
 });
 ````
 
-#2023-03-01
-    
->The output shows that a test case named register new user failed in the file tests/register/registerTest.js on line 19. The test case was expecting a status code of 201 but received a status code of 500.
->
->This could mean that there is an issue with the server and it is not properly responding to the request. It could also mean that the test case itself is incorrect.
->
->However, the output also shows that the user was successfully created in the database. It's possible that the server is working correctly, and the issue is with the test case.
->
->Further investigation and debugging are needed to determine the root cause of the failure.
-
-
-Terminal output :
-````
-> test
-> ava /workspace/Codecademy_project-Photo_Caption_Contest/tests/register/registercontroller.js
-
-
-  ✘ Based on your configuration, 2 test files were found, but did not match the CLI arguments:
-
-  * tests/register/registercontroller.js
-
-gitpod /workspace/Codecademy_project-Photo_Caption_Contest (main) $ npm test /workspace/Codecademy_project-Photo_Caption_Contest/tests/register/registerTest.js
-
-> test
-> ava /workspace/Codecademy_project-Photo_Caption_Contest/tests/register/registerTest.js
-
-
-Executing (default): INSERT INTO "Users" ("uuid","username","email","password","createdAt","updatedAt") VALUES ($1,$2,$3,$4,$5,$6) RETURNING "uuid","username","email","password","createdAt","updatedAt";
-Executing (default): SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'Users'
-Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'Users' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
-Executing (default): SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'Photos'
-Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'Photos' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
-Executing (default): SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'Captions'
-Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'Captions' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
-Executing (default): SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'Votes'
-Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'Votes' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
-Connected to the database
-Server started on port 3000
-  ✘ [fail]: register new user Rejected promise returned by test
-  ─
-
-  register new user
-
-  tests/register/registerTest.js:19
-
-   18:     })           
-   19:     .expect(201);
-   20:                  
-
-  Rejected promise returned by test. Reason:
-
-  Error {
-    message: 'expected 201 "Created", got 500 "Internal Server Error"',
-  }
-
-  › tests/register/registerTest.js:19:6
-  › ----
-  › Test._assertStatus (node_modules/supertest/lib/test.js:252:14)
-  › node_modules/supertest/lib/test.js:308:13
-  › Test._assertFunction (node_modules/supertest/lib/test.js:285:13)
-  › Test.assert (node_modules/supertest/lib/test.js:164:23)
-  › Server.localAssert (node_modules/supertest/lib/test.js:120:14)
-
-  ─
-
-  1 test failed
-````
-But it works and create the user
-
-database_test/Users
-````
- id |                 uuid                 | username |        email         |                           password                           |         createdAt          |         updatedAt          
-----+--------------------------------------+----------+----------------------+--------------------------------------------------------------+----------------------------+----------------------------
-  1 | 1a96f99a-011b-4ab0-8153-5dad03372e0a | testuser | testuser@example.com | $2b$10$6ZeQ9Y3Ws2Z3N1WdyLQtJ.JTHxoAm4AItz1m6oY/zMNhd1uNHN.Sa | 2023-03-01 09:01:57.548+00 | 2023-03-01 09:01:57.548+00
-````
-
-/workspace/Codecademy_project-Photo_Caption_Contest/controllers/authController.js
-````
-// Importing the User model from the index file in the models directory
-const { 
-    User 
-} = require('../models/index.js'); 
-
-// Importing the JSON web token package
-const jwt = require('jsonwebtoken');
-
-// Getting the secret key for the JSON web token from the environment variables
-const secret = process.env.JWT_SECRET;
-
-// Function to register a new user
-exports.registerNewUser = async (req, res) => {
-
-    // Extracting the required fields from the request body
-    const {
-        username,
-        email,
-        password
-    } = req.body;
-
-    try {
-        // Creating a new user in the database
-        const user = await User.create({
-            username,
-            email,
-            password
-        });
-
-        // Creating a JSON web token using the user's ID and the secret key
-        const token = jwt.sign({
-            id: user.id
-        }, secret);
-
-        // Returning the token to the client
-        res.status(201).json({
-            token
-        });
-    } catch (error) {
-        // If an error occurs during the registration process, returning the error message to the client
-        res.status(500).json({
-            error: error.message
-        });
-    }
-};
-````
-.env
-````
-DB_NAME=database_test
-DB_USERNAME=postgres
-DB_PASSWORD=password
-DB_HOST=127.0.0.1
-DB_DIALECT=postgres
-JWT_SECRET=testsecret
-````
-/workspace/Codecademy_project-Photo_Caption_Contest/tests/register/registerTest.js
-````
-const test = require('ava');
-const request = require('supertest');
-const app = require('../../app.js'); 
-const { User } = require('../../models/index.js');
-const jwt = require('jsonwebtoken');
-const secret = process.env.JWT_SECRET;
-
-// Test for registering a new user
-test('register new user', async (t) => {
-  t.plan(3);
-
-  const res = await request(app)
-    .post('/auth/register')
-    .send({
-      username: 'testuser',
-      email: 'testuser@example.com',
-      password: 'testpassword',
-    })
-    .expect(201);
-
-  const token = res.body.token;
-
-  // Verify that the token is valid
-  jwt.verify(token, secret, (err, decoded) => {
-    if (err) {
-      t.fail();
-    } else {
-      t.is(decoded.id, 1); // assuming that the first user has an ID of 1
-      t.pass();
-    }
-  });
-
-  // Verify that the user was added to the database
-  const user = await User.findOne({ where: { username: 'testuser' } });
-  t.is(user.email, 'testuser@example.com');
-});
-````
 
 
 **Happy reporting !**
