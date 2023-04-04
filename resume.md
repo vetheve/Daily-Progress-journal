@@ -205,5 +205,13 @@ Diploma in Biological Engineering\
 * * *
 
 **December 2022**\
+[Learn JavaScript Course](https://www.codecademy.com/profiles/vetheve/certificates/705dcb15de0da4dd9d9fc4f3274b430e) \ 
+*Codecademy*
+
+**December 2022**\
+[Learn JavaScript Course - December 2022](https://www.codecademy.com/profiles/vetheve/certificates/705dcb15de0da4dd9d9fc4f3274b430e)\ 
+*Codecademy*
+
+**December 2022**\
 [Learn JavaScript Course - December 2022](https://www.codecademy.com/profiles/vetheve/certificates/705dcb15de0da4dd9d9fc4f3274b430e)\ 
 *Codecademy*
