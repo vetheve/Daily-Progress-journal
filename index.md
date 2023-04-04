@@ -2,124 +2,26 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[February 2023](./february_2023.html).
-[March 2023](./march_2023.html).
-test
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
+# About Me
 * * *
 
-### Here is an unordered list:
+<p style="text-align: justify;">Hello, I'm Victorien Éthève, a modest and dedicated individual who has discovered a new passion within the realm of data analysis and engineering. My journey began as a QSE manager, where I found joy in working with statistics, automation, and computing.
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+In pursuit of personal growth and eager to make a meaningful impact, I decided to embrace a career change and explore the world of Back-End Development. With an open mind and a desire to learn, I have started to delve into Python and Node.js, seeking to expand my knowledge of web application infrastructure and database management systems.
 
-### And an ordered list:
+My diverse background includes industrial engineering, data analysis, and programming. I believe my strengths lie in my adaptability, problem-solving abilities, and collaborative nature. I remain grounded and focused on continuous learning and improvement.
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+As I continue my journey, I'm committed to using my growing skills in a meaningful way, contributing to the development of efficient, scalable, and responsive web applications. Alongside my professional aspirations, I value a healthy work-life balance.
 
-### And a nested list:
+I invite you to join me as I humbly embark on this new chapter in my career, embracing challenges, learning from others, and striving to make a positive contribution to the world of Back-End Development. Let's connect, share our experiences, and grow together in this exciting field.</p>
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+## My Daily Progress Journal
 
-### Small image
+> [February 2023](./february_2023.html).
+>
+> [March 2023](./march_2023.html).
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+## My Curriculum Vitae
 
-### Large image
+> [Curriculum Vitae](./resume.md).
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
