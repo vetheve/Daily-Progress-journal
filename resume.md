@@ -204,14 +204,44 @@ Diploma in Biological Engineering\
 ## Certificates
 * * *
 
-**December 2022**\
-[Learn JavaScript Course](https://www.codecademy.com/profiles/vetheve/certificates/705dcb15de0da4dd9d9fc4f3274b430e) \ 
-*Codecademy*
-
-**December 2022**\
-[Learn JavaScript Course - December 2022](https://www.codecademy.com/profiles/vetheve/certificates/705dcb15de0da4dd9d9fc4f3274b430e)\ 
-*Codecademy*
-
-**December 2022**\
-[Learn JavaScript Course - December 2022](https://www.codecademy.com/profiles/vetheve/certificates/705dcb15de0da4dd9d9fc4f3274b430e)\ 
-*Codecademy*
+- [Learn JavaScript Course - Codecademy](https://www.codecademy.com/profiles/vetheve/certificates/705dcb15de0da4dd9d9fc4f3274b430e)
+- [Learn JavaScript Unit Testing Course - Codecademy](https://www.codecademy.com/profiles/vetheve/certificates/f4276e8c08a3ba174ef0147deb0c3013)
+- [Data Processing in Shell - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/a7872607c7e720fdfa849f94e8f17d623bc76acd)
+- [Streamlined Data Ingestion with pandas - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/6bd02515b53328ac341867dc90e966d6abfbe770)
+- [Data Engineering for Everyone - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/5f31751bea6391a48c35e7317c374801dafa0a6a)
+- [Intermediate SQL Server - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/dbca144829488386d4b024e923f826c98b08b8ca)
+- [Introduction to Data Engineering - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/f035b3b34ee74368429b2829b71d4abb84a1a89d)
+- [Introduction to Relational Databases in SQL - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/3260fa310b0347b4f7b42e89f532783d3139c4a6)
+- [Introduction to SQL Server - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/fbe654caa1fa9dfe4c87c8fff0133e722f5ed1b6)
+- [Object-Oriented Programming in Python - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/da2d37b7e481cc36fd9cd42c3aa69e2859620de2)
+- [Python Programmer Track - DataCamp](https://www.datacamp.com/statement-of-accomplishment/track/0fcc3406eee74371b1959fd18272d42ec49455fd)
+- [Unit Testing for Data Science in Python - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/5440baf58bd912b9d28aae615ba388b6f8333426?raw=1)
+- [Developing Python Packages - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/319ecb7ec30adbc18442f1521568449a598ea480)
+- [Software Engineering for Data Scientists in Python - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/5699308f9ec7cf81a003e7bda134ee8eb76ee3ee)
+- [Introduction to Shell - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/8407e0b48d5b6628e30128697a15264f2eea0a2e)
+- [Writing Functions in Python - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/6a761b293768824d06469b3568bc2d4f3df5337e)
+- [Python Fundamentals Track - DataCamp](https://www.datacamp.com/statement-of-accomplishment/track/45ab763d6625490f96c2286f6bab56b62e04ee39)
+- [Regular Expressions in Python - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/14d5bde15389294817ca48027133388bdd9d02f9?raw=1)
+- [Web Scraping in Python - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/26ccea1eceebbf3a589130e90f8d83a1ccf4a5cb)
+- [Working with Dates and Times in Python - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/d0462c549f3b4b4828fcd6350f1336046dbb7ce1)
+- [Python Data Science Toolbox (Part 1) - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/1f765b7878c6a44c04e20d082befa7fd10cc7ff3)
+- [Python Data Science Toolbox (Part 2) - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/1c246d246865fc52ce5b296d7be28cd4f954fa42)
+- [Financial Trading in Python - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/e16e51ccef04caef3ba48e450b9ee5f4d6920e02)
+- [Data Manipulation with pandas - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/445113d504184e33a82e983c854e79889a22d5bf)
+- [Data Types for Data Science in Python - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/9c31a6768589ed21c480f5d3f1261abf7e054bd5)
+- [Introduction to Data Science in Python - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/d4b3ddd926a6ff24e95e84919446f7c800b08356)
+- [Clustering with Python - DataScientest.com](https://s3-eu-west-1.amazonaws.com/verify.datascientest.com/BFC24F-D3C402-1D3CF3-A98A37.pdf)
+- [Machine learning with PySpark - DataScientest.com](https://s3-eu-west-1.amazonaws.com/verify.datascientest.com/D4C79E-A94C03-AF458A-6530C2.pdf)
+- [Machine learning with Scikit-learn - DataScientest.com](https://s3-eu-west-1.amazonaws.com/verify.datascientest.com/FFDA07-4BDE3E-2B93CE-2D8FA0.pdf)
+- [Regression with Python - DataScientest.com](https://s3-eu-west-1.amazonaws.com/verify.datascientest.com/0F5B7C-1D5AD7-6632B0-97FFDC.pdf)
+- [SQL for Data Science - DataScientest.com](https://s3-eu-west-1.amazonaws.com/verify.datascientest.com/108971-6447F8-C6383C-8F4A20.pdf)
+- [Text Mining with Python - DataScientest.com](https://s3-eu-west-1.amazonaws.com/verify.datascientest.com/73A37B-BE9F3A-8624A8-7E732D.pdf)
+- [Webscraping with Python - DataScientest.com](https://s3-eu-west-1.amazonaws.com/verify.datascientest.com/6FAB94-6C9753-55F301-9925CA.pdf)
+- [Data-visualization with Matplotlib - DataScientest.com](https://s3-eu-west-1.amazonaws.com/verify.datascientest.com/10516B-DC213C-A1DB11-83AE33.pdf)
+- [Data-visualization with Seaborn - DataScientest.com](https://s3-eu-west-1.amazonaws.com/verify.datascientest.com/1FC598-350FA6-58A01B-F00A72.pdf)
+- [Exploratory statistics for data analysis with Python - DataScientest.com](https://s3-eu-west-1.amazonaws.com/verify.datascientest.com/76E6D8-6EA114-27AD4B-C9BA26.pdf)
+- [Introduction to Python for data-analysis - DataScientest.com](https://s3-eu-west-1.amazonaws.com/verify.datascientest.com/C77B23-D28D23-92C2CD-E2C1DF.pdf)
+- [Introduction to Data in R - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/417e2cc2ef5c95d01c0462ceb1511460309c0e18?raw=1)
+- [Introduction to Data in R - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/417e2cc2ef5c95d01c0462ceb1511460309c0e18?raw=1)
+- [Intermediate R - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/7cf18e3d52cb32f9ebe9e7df14060f8a89fce107)
+- [Introduction to R - DataCamp](https://www.datacamp.com/statement-of-accomplishment/course/7cf18e3d52cb32f9ebe9e7df14060f8a89fce107)
