@@ -71,7 +71,7 @@
 
 **Skills:** Industrial engineering · Process engineering · Audit · Management · Strategic intelligence · Needs analysis · Statistical process control (Data wrangling, Data analysis with distribution laws, ...)  · Programming (Python, SQL, JS).
 
-### Exploitant – Résidence Georgette – 2021, Present
+### Operator – Résidence Georgette – 2021, Present
 **Field:** Tourism.
 - Management and operation of the family business.
 
@@ -79,7 +79,7 @@
 **Field:** Food industry.
 
 **Missions:**
-- Deployment of quality, safety, and environmental policies to obtain ISO certifications.
+- Deployment of quality, safety, and environmental policies.
 - Change support for process improvements and product quality.
 - Ensure regulatory compliance and control monitoring.
 
