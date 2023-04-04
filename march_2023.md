@@ -15,9 +15,9 @@ Daily Progress Journal
 |---:|---:|---:|---:|---:|---:|---:|
 |     |     |[1](#2023-03-01)    |[2](#2023-03-02)    |[3](#2023-03-03)    |4    |5    |
 |[6](#2023-03-06)    |[7](#2023-03-07)    |[8](#2023-03-08)     |[9](#2023-03-09)   |[10](#2023-03-10)   |11   |12   |
-|[13](#2023-03-13)   |[14](#2023-03-14)   |[15](#2023-03-15)   |[16](#2023-03-16)   |[17](#2023-03-17)   |18   |19   |
+|[13](#2023-03-13)   |14   |15  |16   |17   |18   |19   |
 |[20](#2023-03-20)   |[21](#2023-03-21)   |[22](#2023-03-22)   |[23](#2023-03-23)   |[24](#2023-03-24)   |25   |26   |
-|[27](#2023-03-27)   |[28](#2023-03-28)   |[29](#2023-03-29)     |[30](#2023-03-30)     |[31](#2023-03-31)     |     |     |
+|27   |[28](#2023-03-28)   |[29](#2023-03-29)     |[30](#2023-03-30)     |[31](#2023-03-31)     |     |     |
 
 
 
@@ -71,7 +71,7 @@ __Explanation:__
 
 
 Terminal output :
-````
+````shell
 > test
 > ava /workspace/Codecademy_project-Photo_Caption_Contest/tests/register/registercontroller.js
 
@@ -129,14 +129,14 @@ Server started on port 3000
 But it works and create the user
 
 database_test/Users
-````
+````shell
  id |                 uuid                 | username |        email         |                           password                           |         createdAt          |         updatedAt          
 ----+--------------------------------------+----------+----------------------+--------------------------------------------------------------+----------------------------+----------------------------
   1 | 1a96f99a-011b-4ab0-8153-5dad03372e0a | testuser | testuser@example.com | $2b$10$6ZeQ9Y3Ws2Z3N1WdyLQtJ.JTHxoAm4AItz1m6oY/zMNhd1uNHN.Sa | 2023-03-01 09:01:57.548+00 | 2023-03-01 09:01:57.548+00
 ````
 
 /workspace/Codecademy_project-Photo_Caption_Contest/controllers/authController.js
-````
+````js
 // Importing the User model from the index file in the models directory
 const { 
     User 
@@ -184,7 +184,7 @@ exports.registerNewUser = async (req, res) => {
 };
 ````
 .env
-````
+````shell
 DB_NAME=database_test
 DB_USERNAME=postgres
 DB_PASSWORD=password
@@ -193,7 +193,7 @@ DB_DIALECT=postgres
 JWT_SECRET=testsecret
 ````
 /workspace/Codecademy_project-Photo_Caption_Contest/tests/register/registerTest.js
-````
+````js
 const test = require('ava');
 const request = require('supertest');
 const app = require('../../app.js'); 
@@ -385,7 +385,7 @@ __Explanation:__
 >To fix this issue, you should update the controller file to use `req.params.uuid` instead of `req.params.id` to retrieve the user by UUID.
 
 Terminal output :
-````
+````shell
 npm test tests/user/getUserByIdTest.js
 
 > test
@@ -450,7 +450,7 @@ __Explanation:__
 >When using a "put" request to update the password value, it seems that the password is hashed with bcrypt. However, it does not get updated in the "Users" table in the database.
 
 /workspace/Codecademy_project-Photo_Caption_Contest/controllers/userController.js
-````
+````js
 // Importing the User model from the index file in the models directory
 const {
     User
@@ -507,7 +507,7 @@ exports.updateUser = async (req, res) => {
 ````
 
 /workspace/Codecademy_project-Photo_Caption_Contest/tests/user/updateUserTest.js
-````
+````js
 const test = require("ava"); // Importing the AVA test library
 const request = require("supertest"); // Importing the supertest library for making HTTP requests
 const apiRouter = require('../../routes/api.js'); // Importing the api router file for the all the routers
@@ -543,7 +543,7 @@ test('1. updateUser function should retrieve a user by uuid and update the passw
 ````
 
 Terminal output:
-````
+````shell
 npm test tests/user/updateUserTest.js
 
 > test
@@ -569,7 +569,7 @@ Executing (default): SELECT "uuid", "username", "email", "password", "createdAt"
 ````
 
 PSQL Terminal output:
-````
+````shell
 database_test=# SELECT password FROM "Users" WHERE username = 'Vegeta';
  password 
 ----------
@@ -579,7 +579,7 @@ database_test=# SELECT password FROM "Users" WHERE username = 'Vegeta';
 >I encountered a bug while working on the updateUser controller. I managed to fix the bug but unfortunately, I encountered another issue. I violated the constraint of the "password" argument in the "user" model. To resolve this issue and update the password without any problem, I needed to adjust the maximum number of characters allowed in the password constraint to match the maximum size of bytes of a hashed password length.
 
 /workspace/Codecademy_project-Photo_Caption_Contest/controllers/userController.js
-````
+````js
         // If user is not found, return a 404 response
         if (!user) {
             return res.status(404).json({
@@ -606,7 +606,7 @@ database_test=# SELECT password FROM "Users" WHERE username = 'Vegeta';
 
 
 Terminal output:
-````
+````shell
 $ npm test tests/user/updateUserTest.js
 
 > test
@@ -712,7 +712,7 @@ __Explanation:__
 >I use sequelize ORM. I have created a register route and controller to create new user. I created a new user with AVA test, but the auto-increment function isn't working properly. Despite being the fourth user created, this new user created with AVA test has an ID of 1 (The other three users were created using Sequelize seeders). I've checked the database schema and confirmed that the 'id' field is set to auto-increment. Any ideas on how to resolve this issue?
 
 Terminal output :
-````
+````shell
 npm test .../tests/register/registerTest.js
 
 > test
@@ -738,7 +738,7 @@ Executing (default): INSERT INTO "Users" ("uuid","username","email","password","
 ````
 
 PSQL Terminal output :
-````
+````shell
 database_test=# SELECT * FROM "Users";
 
  id |                 uuid                 | username |        email         |                           password                           |         createdAt          |         updatedAt          
@@ -767,7 +767,7 @@ database_test=# \d "Users"
 
 models/user.js
 
-````
+````js
 'use strict';
 
 // Import the bcrypt library for password hashing
@@ -824,7 +824,7 @@ module.exports = (sequelize, DataTypes) => {
 };
 ````
 migrations/20230223064615-create-user.js
-````
+````js
 'use strict';
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -915,7 +915,7 @@ __Explanation:__
 
 
 **Terminal output:**
-````
+````shell
 ✘ [fail]: deletetUser function should delete a user by uuid
     ℹ {
         error: 'update or delete on table "Users" violates foreign key constraint "Photos_user_id_fkey" on table "Photos"',
@@ -947,7 +947,7 @@ __Explanation:__
 >Can anyone help me understand what is causing the issue and how I can fix it? Thank you.
 
 **User model:**
-````
+````js
 ...
 
 // Define a sequelize model for a User
@@ -979,7 +979,7 @@ module.exports = (sequelize, DataTypes) => {
 ...
 ````
 **User migration:**
-````
+````js
 'use strict';
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -1001,7 +1001,7 @@ module.exports = {
 ````
 
 **Photo model:**
-````
+````js
 'use strict';
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -1038,7 +1038,7 @@ module.exports = {
 ````
 
 **Photo migration:**
-````
+````js
 'use strict';
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -1187,13 +1187,13 @@ __Title:__ Codecademy project: Photo Caption Contest
 - [x] **Setup the environment**
 - [x] **Create the models**
 - [x] **Create the seeders**
-- [ ] **Create the controllers** → *In progress*
-- [ ] **Create the auth middleware to specific endpoints**
-- [ ] **Create the routes**
-- [ ] **Test the endpoints**
+- [x] **Create the controllers**
+- [ ] **Create the auth middleware to specific endpoints** → *In progress*
+- [x] **Create the routes**
+- [x] **Test the endpoints**
 - [ ] **Configure localized caching**
 - [ ] **Write a swagger documentation**
-- Total Progression → __30%__
+- Total Progression → __72%__
 
 __Last commits:__
 
@@ -1202,3 +1202,336 @@ __Last commits:__
 - **"FEAT: getCaptionById"** *→ Test passed successfully*
 - **"FEAT: uploadNewCaption"** *→ Test passed successfully*
 - **"FEAT: updateCaption"** *→ Test passed successfully*
+
+#2023-03-20
+---------------------------------------------------------
+    
+### Codecademy Back-End Engineer courses achievements !
+Daily course achievements goals track.
+
+- [x] **Complex Data Strcutures : Introduction**
+- [x] **Complex Data Strcutures : Hash Maps**
+- [x] **Complex Data Strcutures : Tree**
+- [x] **Complex Data Strcutures : Heaps**
+- [ ] **Complex Data Strcutures : Graphs** → *In progress*
+- [ ] **Complex Data Strcutures : Review**
+- Total Progression → __82%__
+
+### Project on going !
+
+__Title:__ Codecademy project: Photo Caption Contest
+
+- [x] **Plan the project**
+- [x] **Define endpoints**
+- [x] **Setup the environment**
+- [x] **Create the models**
+- [x] **Create the seeders**
+- [x] **Create the controllers**
+- [ ] **Create the auth middleware to specific endpoints** → *In progress*
+- [x] **Create the routes**
+- [x] **Test the endpoints**
+- [ ] **Configure localized caching**
+- [ ] **Write a swagger documentation**
+- Total Progression → __72%__
+
+#2023-03-21
+---------------------------------------------------------
+    
+### Codecademy Back-End Engineer courses achievements !
+Daily course achievements goals track.
+
+- [x] **Complex Data Strcutures : Graphs**
+- [x] **Complex Data Strcutures : Review**
+- [x] **Algorithms : Recursion**
+- [ ] **Algorithms : Asymptotic notation** → *In progress*
+- [ ] **Algorithms : Bubble sort**
+- [ ] **Algorithms : Merge sort**
+- [ ] **Algorithms : Quick sort**
+- [ ] **Algorithms : Review**
+- Total Progression → __84%__
+
+### Project on going !
+
+__Title:__ Codecademy project: Photo Caption Contest
+
+- [x] **Plan the project**
+- [x] **Define endpoints**
+- [x] **Setup the environment**
+- [x] **Create the models**
+- [x] **Create the seeders**
+- [x] **Create the controllers**
+- [ ] **Create the auth middleware to specific endpoints** → *In progress*
+- [x] **Create the routes**
+- [x] **Test the endpoints**
+- [ ] **Configure localized caching**
+- [ ] **Write a swagger documentation**
+- Total Progression → __72%__
+
+#2023-03-22
+---------------------------------------------------------
+    
+### Codecademy Back-End Engineer courses achievements !
+Daily course achievements goals track.
+
+- [x] **Complex Data Strcutures : Graphs**
+- [x] **Complex Data Strcutures : Review**
+- [x] **Algorithms : Recursion**
+- [x] **Algorithms : Asymptotic notation**
+- [x] **Algorithms : Bubble sort**
+- [ ] **Algorithms : Merge sort** → *In progress*
+- [ ] **Algorithms : Quick sort**
+- [ ] **Algorithms : Review**
+- Total Progression → __84%__
+
+### Project on going !
+
+__Title:__ Codecademy project: Photo Caption Contest
+
+- [x] **Plan the project**
+- [x] **Define endpoints**
+- [x] **Setup the environment**
+- [x] **Create the models**
+- [x] **Create the seeders**
+- [x] **Create the controllers**
+- [ ] **Create the auth middleware to specific endpoints** → *In progress*
+- [x] **Create the routes**
+- [x] **Test the endpoints**
+- [ ] **Configure localized caching**
+- [ ] **Write a swagger documentation**
+- Total Progression → __72%__
+
+__Title:__ Codecademy project: Open-Ended Project
+
+>I recently discussed our final project with Thomas. According to him, creating a project that could lead to a real solution would be great. Thomas suggested developing a solution related to my previous field of work, utilizing emerging AI technology.
+>
+>During our conversation, Thomas and I concluded that the primary challenge for professionals in regulated industries is staying up-to-date with constantly changing norms and regulations while also managing documentation efficiently. An AI tool like ChatGPT can help ease this burden, allowing professionals to focus on their core tasks. 
+>
+>Thomas recommended that I conduct interviews with over ten professionals in the industrial sector to determine their challenges and requirements.
+>
+>Accordingly, I completed my first interview today with Alain L.
+
+#2023-03-23
+---------------------------------------------------------
+    
+### Codecademy Back-End Engineer courses achievements !
+Daily course achievements goals track.
+
+- [x] **Complex Data Strcutures : Graphs**
+- [x] **Complex Data Strcutures : Review**
+- [x] **Algorithms : Recursion**
+- [x] **Algorithms : Asymptotic notation**
+- [x] **Algorithms : Bubble sort**
+- [x] **Algorithms : Merge sort**
+- [ ] **Algorithms : Quick sort** → *In progress*
+- [ ] **Algorithms : Review**
+- Total Progression → __85%__
+
+### Project on going !
+
+__Title:__ Codecademy project: Photo Caption Contest
+
+- [x] **Plan the project**
+- [x] **Define endpoints**
+- [x] **Setup the environment**
+- [x] **Create the models**
+- [x] **Create the seeders**
+- [x] **Create the controllers**
+- [ ] **Create the auth middleware to specific endpoints** → *In progress*
+- [x] **Create the routes**
+- [x] **Test the endpoints**
+- [ ] **Configure localized caching**
+- [ ] **Write a swagger documentation**
+- Total Progression → __72%__
+
+__Title:__ Codecademy project: Open-Ended Project
+
+- [x] **Transcript of the first interview with Alain L.**
+- [x] **I completed my first interview today with Thomas N.**
+
+#2023-03-24
+---------------------------------------------------------
+    
+### Codecademy Back-End Engineer courses achievements !
+Daily course achievements goals track.
+
+- [x] **Algorithms : Quick sort**
+- [x] **Algorithms : Review**
+- [x] **Search and Graph Search Algorithms : Informational**
+- [x] **Search and Graph Search Algorithms : Binary Search and Search Trees**
+- [ ] **Search and Graph Search Algorithms : Graph Traversals** → *In progress*
+- [ ] **Search and Graph Search Algorithms : Dijkstra's Algorithm**
+- [ ] **Search and Graph Search Algorithms : Review**
+- Total Progression → __90%__
+
+### Project on going !
+
+__Title:__ Codecademy project: Photo Caption Contest
+
+- [x] **Plan the project**
+- [x] **Define endpoints**
+- [x] **Setup the environment**
+- [x] **Create the models**
+- [x] **Create the seeders**
+- [x] **Create the controllers**
+- [ ] **Create the auth middleware to specific endpoints** → *In progress*
+- [x] **Create the routes**
+- [x] **Test the endpoints**
+- [ ] **Configure localized caching**
+- [ ] **Write a swagger documentation**
+- Total Progression → __72%__
+
+__Title:__ Codecademy project: Open-Ended Project
+
+- [x] **Transcript of the second interview with Thomas N.**
+
+#2023-03-28
+---------------------------------------------------------
+    
+### Codecademy Back-End Engineer courses achievements !
+Daily course achievements goals track.
+
+- [x] **Algorithms : Quick sort**
+- [x] **Algorithms : Review**
+- [x] **Search and Graph Search Algorithms : Informational**
+- [x] **Search and Graph Search Algorithms : Binary Search and Search Trees**
+- [ ] **Search and Graph Search Algorithms : Graph Traversals** → *In progress*
+- [ ] **Search and Graph Search Algorithms : Dijkstra's Algorithm**
+- [ ] **Search and Graph Search Algorithms : Review**
+- Total Progression → __90%__
+
+### Project on going !
+
+__Title:__ Codecademy project: Photo Caption Contest
+
+- [x] **Plan the project**
+- [x] **Define endpoints**
+- [x] **Setup the environment**
+- [x] **Create the models**
+- [x] **Create the seeders**
+- [x] **Create the controllers**
+- [ ] **Create the auth middleware to specific endpoints** → *In progress*
+- [x] **Create the routes**
+- [x] **Test the endpoints**
+- [ ] **Configure localized caching**
+- [ ] **Write a swagger documentation**
+- Total Progression → __72%__
+
+__Title:__ Codecademy project: Open-Ended Project
+
+- [x] **Identify an individual for the third interview.**
+
+#2023-03-29
+---------------------------------------------------------
+    
+### Codecademy Back-End Engineer courses achievements !
+Daily course achievements goals track.
+
+- [x] **Algorithms : Quick sort**
+- [x] **Algorithms : Review**
+- [x] **Search and Graph Search Algorithms : Informational**
+- [x] **Search and Graph Search Algorithms : Binary Search and Search Trees**
+- [x] **Search and Graph Search Algorithms : Graph Traversals**
+- [x] **Search and Graph Search Algorithms : Dijkstra's Algorithm**
+- [x] **Search and Graph Search Algorithms : Review**
+- Total Progression → __92%__
+
+### Project on going !
+
+__Title:__ Codecademy project: Photo Caption Contest
+
+- [x] **Plan the project**
+- [x] **Define endpoints**
+- [x] **Setup the environment**
+- [x] **Create the models**
+- [x] **Create the seeders**
+- [x] **Create the controllers**
+- [ ] **Create the auth middleware to specific endpoints** → *In progress*
+- [x] **Create the routes**
+- [x] **Test the endpoints**
+- [ ] **Configure localized caching**
+- [ ] **Write a swagger documentation**
+- Total Progression → __72%__
+
+__Last commits:__
+
+- **"FEAT: create vote"** *→ Test passed successfully*
+
+
+__Title:__ Codecademy project: Open-Ended Project
+
+- [x] **"Resource and Plan Development for AI-Regulatory_assistant"** → *In progress*
+
+#2023-03-30
+---------------------------------------------------------
+    
+### Codecademy Back-End Engineer courses achievements !
+Daily course achievements goals track.
+
+- [x] **What to Expect in a Technical Interview**
+- Total Progression → __92%__
+
+### Project on going !
+
+__Title:__ Codecademy project: Photo Caption Contest
+
+- [x] **Plan the project**
+- [x] **Define endpoints**
+- [x] **Setup the environment**
+- [x] **Create the models**
+- [x] **Create the seeders**
+- [x] **Create the controllers**
+- [ ] **Create the auth middleware to specific endpoints** → *In progress*
+- [x] **Create the routes**
+- [x] **Test the endpoints**
+- [ ] **Configure localized caching**
+- [ ] **Write a swagger documentation**
+- Total Progression → __72%__
+
+__Title:__ Codecademy project: Open-Ended Project
+
+- [ ] **"Resource and Plan Development for AI-Regulatory_assistant"** → *In progress*
+- [x] **I completed my first interview today with Sébastien F.**
+- [x] **Transcript of the second interview with Thomas N.**
+
+#2023-03-31
+---------------------------------------------------------
+    
+### Codecademy Back-End Engineer courses achievements !
+Daily course achievements goals track.
+
+- [x] **Interview skills: Whiteboarding**
+- [x] **Interview skills: Code review**
+- [x] **Interview skills: JS Algorithm practice** → *In progress*
+- Total Progression → __97%__
+
+### Project on going !
+
+__Title:__ Codecademy project: Photo Caption Contest
+
+- [x] **Plan the project**
+- [x] **Define endpoints**
+- [x] **Setup the environment**
+- [x] **Create the models**
+- [x] **Create the seeders**
+- [x] **Create the controllers**
+- [ ] **Create the auth middleware to specific endpoints** → *In progress*
+- [x] **Create the routes**
+- [x] **Test the endpoints**
+- [ ] **Configure localized caching**
+- [ ] **Write a swagger documentation**
+- Total Progression → __72%__
+
+__Last commits:__
+
+- **"TEST: middleware -> Tests passed successeffuly"** *→ Test passed successfully*
+- **"ADD: add middlewares test to getAllUsersTest.js"** *→ Test passed successfully*
+- **"FIX: modify migration user file add the role column"** *→ Test passed successfully*
+- **"ADD: middleware cache"** *→ Test passed successfully*
+- **"ADD: middleware authorization"** *→ Test passed successfully*
+- **"ADD: authentication middleware"** *→ Test passed successfully*
+- **"FEAT: User model to include a role attribute"** *→ Test passed successfully*
+
+__Title:__ Codecademy project: Open-Ended Project
+
+- [ ] **"Resource and Plan Development for AI-Regulatory_assistant"** → *In progress*
+- [x] **Identify an individual for the fourth interview.**
