@@ -1490,7 +1490,7 @@ __Title:__ Codecademy project: Photo Caption Contest
 __Title:__ Codecademy project: Open-Ended Project
 
 - [ ] **"Resource and Plan Development for AI-Regulatory_assistant"** → *In progress*
-- [x] **I completed my first interview today with Sébastien F.**
+- [x] **I completed my third interview today with Sébastien F.**
 - [x] **Transcript of the second interview with Thomas N.**
 
 #2023-03-31
@@ -1514,12 +1514,12 @@ __Title:__ Codecademy project: Photo Caption Contest
 - [x] **Create the models**
 - [x] **Create the seeders**
 - [x] **Create the controllers**
-- [ ] **Create the auth middleware to specific endpoints** → *In progress*
+- [x] **Create the auth middleware to specific endpoints** → *In progress*
 - [x] **Create the routes**
 - [x] **Test the endpoints**
-- [ ] **Configure localized caching**
+- [x] **Configure localized caching**
 - [ ] **Write a swagger documentation**
-- Total Progression → __72%__
+- Total Progression → __99%__
 
 __Last commits:__
 
