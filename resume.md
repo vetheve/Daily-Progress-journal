@@ -1,11 +1,13 @@
-# Victorien Éthève
-
-## **Aspiring Back-End Developer**
+# **Aspiring Back-End Developer**
 
 ## Contact
+* * *
 - Reunion Island
 - +262 693 491 333
 - victorien.etheve@outlook.fr
+
+## Skills
+* * *
 
 ### Technical Skills
 - Back-End Development with Python and Node.js
@@ -40,9 +42,11 @@
 - English level B2-C1
 
 ## Experiences
+* * *
 
 ### Consultant Engineer – Freelance – 2021, Present
 **Field:** Any industry.
+
 **Missions:**
 - as Industrial Engineer (Senior):
   - Optimize the processes and systems used in the production of goods and services.
@@ -64,24 +68,28 @@
   - Ensure the back-end is secure, scalable, and responsive to users' needs.
   - Create a reliable, fast, and secure infrastructure that supports the functionality of web applications.
   - Proficient in executing and analyzing results of various types of software tests.
+
 **Skills:** Industrial engineering · Process engineering · Audit · Management · Strategic intelligence · Needs analysis · Statistical process control (Data wrangling, Data analysis with distribution laws, ...)  · Programming (Python, SQL, JS).
+
+### Exploitant – Résidence Georgette – 2021, Present
+**Field:** Tourism.
+- Management and operation of the family business.
 
 ### QSE Site Manager – SPHB – 2022
 **Field:** Food industry.
+
 **Missions:**
 - Deployment of quality, safety, and environmental policies to obtain ISO certifications.
 - Change support for process improvements and product quality.
 - Ensure regulatory compliance and control monitoring.
 
-### Exploitant – Résidence Georgette – 2021, Present
-**Field:** Tourism.
-Management and operation of the family business.
-
 ### QSE Site Manager – Miss Antilles International – 2012, 2020
 **Field:** Cosmetic industry.
+
 **Missions:**
 - Deployment of quality, safety, and environmental policies to obtain ISO certifications.
 - Change support for process improvements and product quality.
+
 **Achievements:**
 - Automation of tasks traditionally associated with the quality manager position:
   - Development of an automated electronic document management system based on Sharepoint (automated workflows, automatic notifications & reminders, dashboard with visualization of workflow statuses & KPIs) (Sharepoint, C# (ASP.NET), CSS).
@@ -109,6 +117,7 @@ Management and operation of the family business.
   - Machine failures.
   - Impact of weather conditions on quality.
   - Corrosion of various production machines caused by a complex chemical phenomenon.
+
 **Results:**
   - Implementation of preventive maintenance.
   - Resolution of defects in the production chain.
@@ -118,16 +127,20 @@ Management and operation of the family business.
   - Improvement of the commercial performance of new products.
   - Significant reduction in the number of breakdowns on the production line and their durations.
   - Taking into account production, storage, and sales losses, an increase in turnover between 10% and 20%.
+
 **Skills:** Industrial engineering · Process engineering · Audit · Management · Strategic intelligence · Needs analysis · Programming (C#, ASP.NET, CSS, SQL, VBA / Excel) · Statistics & Data Analysis (Data wrangling, Data analysis with distribution laws, descriptive statistics …) · Statistical process control
 
 ### Quality Assistant Manager – Stallergenes Greer – 2011
 **Field:** Pharmaceutical industry.
+
 **Missions:**
-Writing procedures and documents for quality control and analytical development, in accordance with the requirements of the "U.S. Food and Drug Administration".
+- Writing procedures and documents for quality control and analytical development, in accordance with the requirements of the "U.S. Food and Drug Administration".
+
 **Skills:** Industrial engineering · Process engineering · Audit · Management · Regulatory
 
 ### QSE Assistant Manager – Mecalectro – 2010
 **Field:** Fine mechanics industry.
+
 **Missions:**
 - Monitoring of environmental aspects according to ISO standards.
 - Development of a tool for evaluating the ecological footprint of a product with a view to Eco-design.
@@ -136,11 +149,13 @@ Writing procedures and documents for quality control and analytical development,
   - Normalization of collected data.
   - Identification of causes of non-conformity of data (input errors, machine defects, ...).
   - Statistical data analysis (multidimensional analysis, standard deviations, variances, ...).
+
 **Results:**
   - Simplification of measurement procedures.
   - Replacement of non-standard measurement instruments.
   - Training of operators in measurement taking.
   - Reduction in the number of false negatives during product conformity tests.
+  
 **Skills:** Industrial engineering · Process engineering · Audit · Management · Needs analysis · Statistics & Data Analysis (Data wrangling, Data analysis with distribution laws, descriptive statistics …) · Statistical process control
 
 ### Technician Internship - INRAP - 2009 
@@ -156,31 +171,39 @@ Writing procedures and documents for quality control and analytical development,
 - Study the genetic diversity of bacterial strains (Xanthomonas pvs. citri) citrus canker.
 
 ## Education
+* * *
 
-**In progress**
-Back-End Engineer with JavaScript
+**In progress**\
+Back-End Engineer with JavaScript\
 *Codecademy*
 
-**2022**
-Python Programmer Track
+**2022**\
+Python Programmer Track\
 *DataCamp*
 
-**2020**
-Certified Data Analyst Title
+**2020**\
+Certified Data Analyst Title\
 *Panthéon-Sorbonne University*
 
-**2012**
-MBA in Quality & Bioproduction
+**2012**\
+MBA in Quality & Bioproduction\
 *Ionis-STM*
 
-**2010**
-Bachelor's degree in Industrial Production Management
+**2010**\
+Bachelor's degree in Industrial Production Management\
 *Paris-Est Gustave Eiffel University*
 
-**2009**
-Bachelor's degree in Environmental Protection
+**2009**\
+Bachelor's degree in Environmental Protection\
 *University of French Guiana*
 
-**2008**
-Diploma in Biological Engineering
+**2008**\
+Diploma in Biological Engineering\
 *University of La Réunion*
+
+## Certificates
+* * *
+
+**December 2022**\
+[Learn JavaScript Course - December 2022](https://www.codecademy.com/profiles/vetheve/certificates/705dcb15de0da4dd9d9fc4f3274b430e)\ 
+*Codecademy*
