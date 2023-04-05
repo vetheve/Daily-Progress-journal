@@ -92,9 +92,9 @@ __Title:__ Codecademy project: Open-Ended Project
 - [x] **Identify an individual for the fifth interview.**
 - [x] **Planning of the fifth interview.**
 - [x] **Identify an individual for the sixth interview.**
-- [x] **Planning of tthe sixth interview.**
+- [x] **Planning of the sixth interview.**
 - [x] **Identify an individual for the seventh interview.**
-- [ ] **Planning of tthe sixth interview.** → *In progress*
+- [ ] **Planning of the seventh interview.** → *In progress*
 
 ### Svelte !
 
