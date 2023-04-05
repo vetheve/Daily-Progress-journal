@@ -96,6 +96,10 @@ __Title:__ Codecademy project: Open-Ended Project
 - [x] **Identify an individual for the seventh interview.**
 - [ ] **Planning of tthe sixth interview.** → *In progress*
 
+### Svelte !
+
+- [ ] **Svelte tutorial** → *In progress*
+
 ### Codewars Kata !
 
 __Description:__
