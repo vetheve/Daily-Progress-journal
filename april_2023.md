@@ -143,3 +143,105 @@ function digPow(n, p) {
   return sumPow % n === 0 ? sumPow / n : -1;
 }
 ````
+
+#2023-04-06
+---------------------------------------------------------
+    
+### Codecademy Back-End Engineer courses achievements !
+Daily course achievements goals track.
+
+- [ ] **Open-Ended Project** → *In progress*
+- Total Progression → __99%__
+
+### Project on going !
+
+__Title:__ Codecademy project: Open-Ended Project
+
+- [ ] **"Resource and Plan Development for AI-Regulatory_assistant"** → *In progress*
+- [x] **Identify an individual for the fifth interview.**
+- [x] **Planning of the fifth interview.**
+- [x] **Identify an individual for the sixth interview.**
+- [x] **Planning of the sixth interview.**
+- [x] **Identify an individual for the seventh interview.**
+- [ ] **Planning of the seventh interview.** → *In progress*
+
+### Svelte !
+
+- [ ] **Svelte tutorial** → *In progress*
+
+### Codewars Kata !
+
+__Description:__
+
+>ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
+>
+>If the function is passed a valid PIN string, return true, else return false.
+>
+>Examples (Input --> Output)
+
+````shell
+"1234"   -->  true
+"12345"  -->  false
+"a234"   -->  false
+````
+__My solution:__
+
+>My first thought was to use the handy `parseInt()` function. As I was testing my code, I noticed that the function wasn't working properly. The error message indicates that the test case for the input "0000" failed because the function returned false instead of true. This happened because the `parseInt()` function treats leading zeros as octal notation, so "0000" gets converted to the number 0. Therefore, the `Number.isInteger()` check fails and the function returns false.
+````js
+function validatePIN(pin) {
+    const num = parseInt(pin);
+    if(Number.isInteger(num) && (pin.length === 4 || pin.length === 6) && num > 0) {
+      return console.log(true);
+    } else {
+      return console.log(false);
+    }
+};
+````
+Terminal output error:
+````shell
+Test Results:
+validatePIN
+  should return False for pins with length other than 4 or 6
+  should return False for pins which contain characters other than digits
+  should return True for valid pins
+    Wrong output for '0000': expected false to equal true
+````
+>I knew I needed a different approach. With the help of regex, I was able to write a function that correctly converted strings into integers without any issues.
+````js
+function validatePIN(pin) {
+  const regex = /^\d+$/;
+  if(regex.test(pin) && (pin.length === 4 || pin.length === 6)) {
+    return true;
+  } else {
+    return false;
+  }
+};
+````
+>The `validatePIN()` function takes a string argument pin.
+>
+>The regular expression `^\d+$` is stored in the regex variable. This regular expression matches a string that contains only digits `(0-9)` and no other characters.
+>
+>The `test()` method of the regex object is called with the pin argument as its parameter. This method returns true if the pin string matches the regular expression, and false otherwise.
+>
+>The if statement checks if the pin string matches the regular expression and if its length is either `4` or `6` characters. If both conditions are true, the function returns true.
+>
+>If the if statement condition is not met, the function returns false.
+>
+>In summary, the `validatePIN()` function checks whether the pin string contains only digits and has a length of either `4` or `6` characters. If both conditions are met, the function returns true. Otherwise, it returns false.
+>
+Refactored version:
+````js
+function validatePIN(pin) {
+  const regex = /^\d{4}(\d{2})?$/;
+  return regex.test(pin);
+}
+````
+>The regular expression `^\d{4}(\d{2})?$` is used to match PINs that are either `4` or `6` digits long.
+>
+>The `{4}` quantifier matches exactly four digit characters, and the `(\d{2})?` group matches an optional sequence of two more digit characters.
+>
+>The `^` and `$` anchors match the beginning and end of the string, respectively.
+>
+>The `test()` method of the regular expression object is used to check if the input pin matches the regular expression.
+>
+>The function returns true if the pin matches the regular expression, and false otherwise.
