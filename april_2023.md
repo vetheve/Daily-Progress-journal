@@ -98,7 +98,26 @@ __Title:__ Codecademy project: Open-Ended Project
 
 ### Svelte !
 
-- [ ] **Svelte tutorial** → *In progress*
+- [ ] 1. **Introduction** -> *In progresss*
+- [ ] 2. **Reactivity**
+- [ ] 3. **Props**
+- [ ] 4. **Logic**
+- [ ] 5. **Events**
+- [ ] 6. **Bindings**
+- [ ] 7. **Life cycle**
+- [ ] 8. **Stores**
+- [ ] 9. **Mention**
+- [ ] 10. **Transitions**
+- [ ] 11. **Animations**
+- [ ] 12. **Actions**
+- [ ] 13. **Advanced styling**
+- [ ] 14. **Component composition**
+- [ ] 15. **Context API**
+- [ ] 16. **Special Elements**
+- [ ] 17. **Module context**
+- [ ] 18. **Special tags**
+- [ ] 19. **Next steps**
+- Total Progression → __0%__
 
 ### Codewars Kata !
 
@@ -159,15 +178,32 @@ __Title:__ Codecademy project: Open-Ended Project
 
 - [ ] **"Resource and Plan Development for AI-Regulatory_assistant"** → *In progress*
 - [x] **Identify an individual for the fifth interview.**
-- [x] **Planning of the fifth interview.**
-- [x] **Identify an individual for the sixth interview.**
-- [x] **Planning of the sixth interview.**
-- [x] **Identify an individual for the seventh interview.**
-- [ ] **Planning of the seventh interview.** → *In progress*
+- [x] **Planning of the fifth interview - scheduledFriday on the 7th of April 2023**
+- [x] **Planning of the sixth interview - scheduledFriday on the 7th of April 2023**
+- [x] **Planning of the seventh interview - scheduledFriday on the 14th of April 2023**
 
 ### Svelte !
 
-- [ ] **Svelte tutorial** → *In progress*
+- [x] 1. **Introduction** 
+- [x] 2. **Reactivity** -> *In progresss*
+- [ ] 3. **Props**
+- [ ] 4. **Logic**
+- [ ] 5. **Events**
+- [ ] 6. **Bindings**
+- [ ] 7. **Life cycle**
+- [ ] 8. **Stores**
+- [ ] 9. **Mention**
+- [ ] 10. **Transitions**
+- [ ] 11. **Animations**
+- [ ] 12. **Actions**
+- [ ] 13. **Advanced styling**
+- [ ] 14. **Component composition**
+- [ ] 15. **Context API**
+- [ ] 16. **Special Elements**
+- [ ] 17. **Module context**
+- [ ] 18. **Special tags**
+- [ ] 19. **Next steps**
+- Total Progression → __10.5%__
 
 ### Codewars Kata !
 
@@ -245,3 +281,40 @@ function validatePIN(pin) {
 >The `test()` method of the regular expression object is used to check if the input pin matches the regular expression.
 >
 >The function returns true if the pin matches the regular expression, and false otherwise.
+
+### Other !
+
+>Today, I didn't feel like summarizing a 10,000-word text, so I asked ChatGPT to do it for me. However, ChatGPT can only process requests containing 1000-1300 words at a time. To work around this limitation, I split the text into multiple files containing 1000 words each and instructed ChatGPT to wait for further instructions. I wrote a small script to split the text into these files. Finally, I asked ChatGPT to summarize all the information I had given it.
+
+````powershell
+>$wordCount = (Get-Content file.txt | Measure-Object -Word).Words
+>echo "Word count: $wordCount"
+>powershell -Command "& {$(($wordCount) * 0.25)}"
+Word count: 10162
+````
+
+````powershell
+$InputFile = ".\file.txt"
+$OutputFilePrefix = ".\outputfile"
+$MaxWords = 1000
+$WordCount = 0
+$FileCount = 1
+
+Get-Content $InputFile -ReadCount 1 -Encoding UTF8 | ForEach-Object {
+    $Line = $_
+    $Words = $Line -split '\s+'
+    foreach ($Word in $Words) {
+        if ($WordCount -eq 0) {
+            $OutputFile = $OutputFilePrefix + "_$FileCount.txt"
+            $FileCount++
+        }
+        Add-Content $OutputFile $Word -NoNewline
+        Add-Content $OutputFile ' ' -NoNewline
+        $WordCount++
+
+        if ($WordCount -ge $MaxWords) {
+            $WordCount = 0
+        }
+    }
+}
+````
