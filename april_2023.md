@@ -318,3 +318,85 @@ Get-Content $InputFile -ReadCount 1 -Encoding UTF8 | ForEach-Object {
     }
 }
 ````
+
+#2023-04-06
+---------------------------------------------------------
+    
+### Codecademy Back-End Engineer courses achievements !
+Daily course achievements goals track.
+
+- [ ] **Open-Ended Project** → *In progress*
+- Total Progression → __99%__
+
+### Project on going !
+
+__Title:__ Codecademy project: Open-Ended Project
+
+
+### Svelte !
+
+- [x] 1. **Introduction** 
+- [x] 2. **Reactivity**
+- [x] 3. **Props**
+- [x] 4. **Logic**
+- [ ] 5. **Events** -> *In progresss*
+- [ ] 6. **Bindings**
+- [ ] 7. **Life cycle**
+- [ ] 8. **Stores**
+- [ ] 9. **Mention**
+- [ ] 10. **Transitions**
+- [ ] 11. **Animations**
+- [ ] 12. **Actions**
+- [ ] 13. **Advanced styling**
+- [ ] 14. **Component composition**
+- [ ] 15. **Context API**
+- [ ] 16. **Special Elements**
+- [ ] 17. **Module context**
+- [ ] 18. **Special tags**
+- [ ] 19. **Next steps**
+- Total Progression → __10.5%__
+
+### Codewars Kata !
+
+__Description:__
+
+>You might know some pretty large perfect squares. But what about the NEXT one? Complete the findNextSquare method that finds the next integral perfect square after the one passed as a parameter. Recall that an integral perfect square is an integer n such that sqrt(n) is also an integer. If the parameter is itself not a perfect square then -1 should be returned. You may assume the parameter is non-negative.
+
+Examples:(Input --> Output)
+````
+121 --> 144
+625 --> 676
+114 --> -1 since 114 is not a perfect square
+````
+__My solution:__
+
+````javascript
+function findNextSquare(sq) {
+  let root = Math.sqrt(sq);
+  while (!Number.isInteger(root)) {
+    return -1;
+  }
+  root++;
+  return root ** 2;
+}
+````
+
+````javascript
+function findNextSquare(sq) {
+  root = Math.sqrt(sq)
+  if(Number.isInteger(root)) {
+    root++
+    return root ** 2;
+  } else {
+    return -1 ;
+  }
+};
+````
+
+Refactored version:
+````javascript
+function findNextSquare(sq) {
+  const root = Math.sqrt(sq);
+  return Number.isInteger(root) ? (root + 1) ** 2 : -1;
+}
+````
