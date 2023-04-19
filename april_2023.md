@@ -574,3 +574,96 @@ function alphabetPosition(text) {
 5. Finally, the `join(' ')` method is used to join the elements of the array of alphabet positions into a single string, with a space as the separator between elements.
 
 >This refactored version of the function improves readability by using functional programming concepts such as split, map, and join methods, as well as a helper function for better code organization. It also eliminates the need for a loop and if condition, resulting in cleaner and more concise code.
+
+
+#2023-04-19
+---------------------------------------------------------
+    
+### Codecademy Back-End Engineer courses achievements !
+Daily course achievements goals track.
+
+- [ ] **Open-Ended Project** → *In progress*
+- Total Progression → __99%__
+
+### Project on going !
+
+__Title:__ Codecademy project: Open-Ended Project
+
+### Svelte !
+
+- [x] 1. **Introduction** 
+- [x] 2. **Reactivity**
+- [x] 3. **Props**
+- [x] 4. **Logic**
+- [x] 5. **Events**
+- [ ] 6. **Bindings** -> *In progresss*
+- [ ] 7. **Life cycle**
+- [ ] 8. **Stores**
+- [ ] 9. **Mention**
+- [ ] 10. **Transitions**
+- [ ] 11. **Animations**
+- [ ] 12. **Actions**
+- [ ] 13. **Advanced styling**
+- [ ] 14. **Component composition**
+- [ ] 15. **Context API**
+- [ ] 16. **Special Elements**
+- [ ] 17. **Module context**
+- [ ] 18. **Special tags**
+- [ ] 19. **Next steps**
+- Total Progression → __26%__
+
+### Codewars Kata !
+
+__Description:__
+
+````
+Given the triangle of consecutive odd numbers:
+
+             1
+          3     5
+       7     9    11
+   13    15    17    19
+21    23    25    27    29
+...
+Calculate the sum of the numbers in the nth row of this triangle (starting at index 1) e.g.: (Input --> Output)
+
+1 -->  1
+2 --> 3 + 5 = 8
+````
+
+__My solution:__
+
+Me on Codewars after an hour and proud of my solution:
+````python
+def row_sum_odd_numbers(n):
+    # Initialize odd_number variable to 1, which is the first odd number
+    odd_number = 1
+    
+    # Initialize an empty list to store the odd numbers in the nth row
+    row_n = []
+
+    # Loop through the range of 1 to n+1, including n (for n rows)
+    for i in range(1, n+1):
+        # Loop through the range of 1 to i+1, for the ith row
+        for j in range(1, i+1):
+            # Check if the current row is the nth row
+            if i == n:
+                # If it is the nth row, add the current odd number to the row_n list
+                row_n.append(odd_number)
+            
+            # Increment the odd_number by 2 to get the next odd number in the sequence
+            odd_number += 2
+        
+        # If the current row is the nth row, break out of the loop early
+        if i == n:
+            break
+
+    # Return the sum of all odd numbers in the nth row
+    return sum(row_n)
+````
+:joy:
+Another guy on Codewars:
+````python
+def row_sum_odd_numbers(n):
+    return n ** 3
+````
