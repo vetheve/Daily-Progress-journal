@@ -15,8 +15,8 @@ Daily Progress Journal
 |---:|---:|---:|---:|---:|---:|---:|
 |     |     |     |     |     | 1 | 2 |
 |[3](#2023-04-03)|[4](#2023-04-04)|[5](#2023-04-05)|[6](#2023-04-06)|[7](#2023-04-07)| 8 | 9 |
-|10|11|[12](#2023-04-12)|[13](#2023-04-13)|[14](#2023-04-14)| 15 | 16 |
-|[17](#2023-04-17)|[18](#2023-04-18)|[19](#2023-04-19)|[20](#2023-04-20)|[21](#2023-04-21)| 22 | 23 |
+|10|11|[12](#2023-04-12)|13|14| 15 | 16 |
+|17|18|[19](#2023-04-19)|20|21| 22 | 23 |
 |[24](#2023-04-24)|[25](#2023-04-25)|[26](#2023-04-26)|[27](#2023-04-27)|[28](#2023-04-28)| 29 | 30 |
 
 
@@ -348,7 +348,7 @@ Get-Content $InputFile -ReadCount 1 -Encoding UTF8 | ForEach-Object {
 }
 ````
 
-#2023-04-06
+#2023-04-07
 ---------------------------------------------------------
     
 ### Codecademy Back-End Engineer courses achievements !
@@ -435,7 +435,7 @@ function findNextSquare(sq) {
 }
 ````
 
-#2023-04-07
+#2023-04-08
 ---------------------------------------------------------
     
 ### Codecademy Back-End Engineer courses achievements !
@@ -666,4 +666,97 @@ Another guy on Codewars:
 ````python
 def row_sum_odd_numbers(n):
     return n ** 3
+````
+
+
+#2023-04-24
+---------------------------------------------------------
+    
+### Codecademy Back-End Engineer courses achievements !
+Daily course achievements goals track.
+
+- [ ] **Open-Ended Project** → *In progress*
+- Total Progression → __99%__
+
+### Certification requirement:
+- [x] **Exam: Software Engineering Foundations (part 1)** -> *Passing score: 90%*
+- [ ] **Exam: Software Engineering Foundations (part 2)**
+- [ ] **Exam: Back-End Development (part 1)**
+- [ ] **Exam: Back-End Development (part 2)**
+- [ ] **Exam: Advanced Back-End Development (part 1)** -> **In progress**
+- [ ] **Exam: Advanced Back-End Development (part 2)**
+- [ ] **Exam: Security, Infrastructure, & Scalability (part 1)**
+- [ ] **Exam: Security, Infrastructure, & Scalability (part 2)**
+- [ ] **Exam: Interview Prep (part 1)**
+- [ ] **Exam: Interview Prep (part 2)**
+
+### Project on going !
+
+__Title:__ Codecademy project: Open-Ended Project
+
+### Svelte !
+
+- [x] 1. **Introduction** 
+- [x] 2. **Reactivity**
+- [x] 3. **Props**
+- [x] 4. **Logic**
+- [x] 5. **Events**
+- [ ] 6. **Bindings** -> *In progresss*
+- [ ] 7. **Life cycle**
+- [ ] 8. **Stores**
+- [ ] 9. **Mention**
+- [ ] 10. **Transitions**
+- [ ] 11. **Animations**
+- [ ] 12. **Actions**
+- [ ] 13. **Advanced styling**
+- [ ] 14. **Component composition**
+- [ ] 15. **Context API**
+- [ ] 16. **Special Elements**
+- [ ] 17. **Module context**
+- [ ] 18. **Special tags**
+- [ ] 19. **Next steps**
+- Total Progression → __26%__
+
+### Codewars Kata !
+
+__Description:__
+
+>The rgb function is incomplete. Complete it so that passing in RGB decimal values will result in a hexadecimal representation being returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that range must be rounded to the closest valid value.
+>
+>Note: Your answer should always be 6 characters long, the shorthand with 3 will not work here.
+>
+>The following are examples of expected output values:
+````C
+rgb(255, 255, 255) // returns FFFFFF
+rgb(255, 255, 300) // returns FFFFFF
+rgb(0,0,0) // returns 000000
+rgb(148, 0, 211) // returns 9400D3
+````
+__My solution:__
+
+````JavaScript
+function rgb(r, g, b) {
+  var hexR = Math.max(0, Math.min(255, r)).toString(16).padStart(2, '0');
+  var hexG = Math.max(0, Math.min(255, g)).toString(16).padStart(2, '0');
+  var hexB = Math.max(0, Math.min(255, b)).toString(16).padStart(2, '0');
+  return (hexR + hexG + hexB).toUpperCase();
+}
+````
+> 1. Math.max(0, Math.min(255, r)): This method ensures that the input value r is within the valid range of 0-255. If r is less than 0, it is set to 0, and if it is greater than 255, it is set to 255. The same is done for g and b.
+>
+> 2. .toString(16): This method converts the value of the color component to a hexadecimal string. The 16 argument specifies that the number should be converted to a hexadecimal string.
+>
+> 3. .padStart(2, '0'): This method pads the hexadecimal string with a leading zero if its length is less than 2 characters. This ensures that each hexadecimal color component is represented by exactly 2 characters in the final string. The 2 argument specifies the minimum length of the string, and the '0' argument specifies the character to use for padding.
+>
+> 4. toUpperCase(): This method converts the hexadecimal color string to all uppercase letters.
+> 
+> By using these methods, the updated rgb function ensures that the input values are within the valid range of 0-255, converts each color component to a 2-digit hexadecimal string using toString(16) and pads it with leading zeros using padStart(2, '0'). The resulting hexadecimal strings for each color component are then concatenated to form a 6-digit hexadecimal string representing the color. Finally, toUpperCase() method is called to convert the string to all uppercase letters.
+> 
+> Here's an example usage of the updated rgb function:
+
+````JavaScript
+console.log(rgb(148, 0, 211)); // Output: "9400D3"
+console.log(rgb(255, 255, 255)); // Output: "FFFFFF"
+console.log(rgb(0, 0, 0)); // Output: "000000"
+console.log(rgb(300, 200, 100)); // Output: "FFC864"
 ````
