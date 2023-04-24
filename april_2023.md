@@ -680,7 +680,7 @@ Daily course achievements goals track.
 
 ### Certification requirement:
 - [x] **Exam: Software Engineering Foundations (part 1)** -> *Passing score: 90%*
-- [ ] **Exam: Software Engineering Foundations (part 2)**
+- [x] **Exam: Software Engineering Foundations (part 2)** -> *Passing score: 83%*
 - [ ] **Exam: Back-End Development (part 1)**
 - [ ] **Exam: Back-End Development (part 2)**
 - [ ] **Exam: Advanced Back-End Development (part 1)** -> **In progress**
